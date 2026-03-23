@@ -2,8 +2,6 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -44,6 +42,24 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --sidebar: var(--color-txly-background);
+  --sidebar-foreground: var(--color-txly-foreground);
+  --sidebar-primary: var(--color-txly-primary);
+  --sidebar-primary-foreground: var(--color-txly-primary-foreground);
+  --sidebar-accent: var(--color-txly-accent);
+  --sidebar-accent-foreground: var(--color-txly-accent-foreground);
+  --sidebar-border: var(--color-txly-border);
+  --sidebar-ring: var(--color-txly-border-primary);
+
+  --color-txly-foreground: var(--txly-foreground);
+  --color-txly-background: var(--txly-background);
+  --color-txly-accent: var(--txly-accent);
+  --color-txly-accent-foreground: var(--txly-accent-foreground);
+  --color-txly-primary: var(--txly-primary);
+  --color-txly-primary-foreground: var(--txly-primary-foreground);
+  --color-txly-border: var(--txly-border);
+  --color-txly-border-primary: var(--txly-border-primary);
 }
 
 :root {
@@ -60,60 +76,100 @@
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent: oklch(37.8% 0.077 168.94);
+  --accent-foreground: oklch(95% 0.052 163.051);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
+  --input: oklch(0.922 0   --sidebar: oklch(26.2% 0.051 172.552);
+  --sidebar-foreground: oklch(95% 0.052 163.051);
+  --sidebar-primary: oklch(87.1% 0.15 154.449);
+  --sidebar-primary-foreground: oklch(87.1% 0.15 154.449);
+  --sidebar-accent: oklch(37.8% 0.077 168.94);
+  --sidebar-accent-foreground: oklch(87.1% 0.15 154.449);
+  --sidebar-border: oklch(97.9% 0.021 166.113);
+  --sidebar-ring: oklch(59.6% 0.145 163.225);
+
+  --txly-foreground: oklch(95% 0.052 163.051);
+  --txly-background: oklch(18.406% 0.07553 29.223);
+  --txly-accent: oklch(37.8% 0.077 168.94);
+  --txly-accent-foreground: oklch(87.1% 0.15 154.449);
+  --txly-primary: oklch(50.8% 0.118 165.612);
+  --txly-primary-foreground: oklch(87.1% 0.15 154.449);
+  --txly-border: oklch(97.9% 0.021 166.113);
+  --txly-border-primary: oklch(59.6% 0.145 163.225);0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  /* TXLY CSS Variables */
+  --txly-foreground: var(--color-emerald-100);
+  --txly-background: var(--color-emerald-950);
+  --txly-accent: var(--color-emerald-900);
+  --txly-accent-foreground: var(--color-emerald-300);
+  --txly-primary: var(--color-emerald-700);
+  --txly-primary-foreground: var(--color-emerald-300);
+  --txly-border: var(--color-emerald-100);
+  --txly-border-primary:  var(--color-emerald-600);
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+[data-theme="lush-green"] {
+  --txly-foreground: var(--color-emerald-100);
+  --txly-background: var(--color-emerald-950);
+  --txly-accent: var(--color-emerald-900);
+  --txly-accent-foreground: var(--color-emerald-300);
+  --txly-primary: var(--color-emerald-700);
+  --txly-primary-foreground: var(--color-emerald-300);
+  --txly-border: var(--color-emerald-100);
+  --txly-border-primary:  var(--color-emerald-600);
 }
+
+[data-theme="purple"] {
+  --txly-foreground: var(--color-purple-100);
+  --txly-background: var(--color-purple-950);
+  --txly-accent: var(--color-purple-900);
+  --txly-accent-foreground: var(--color-purple-300);
+  --txly-primary: var(--color-purple-700);
+  --txly-primary-foreground: var(--color-purple-300);
+  --txly-border: var(--color-purple-100);
+  --txly-border-primary:  var(--color-purple-600);
+}
+
+[data-theme="blue"] {
+  --txly-foreground: var(--color-blue-100);
+  --txly-background: var(--color-blue-950);
+  --txly-accent: var(--color-blue-900);
+  --txly-accent-foreground: var(--color-blue-300);
+  --txly-primary: var(--color-blue-700);
+  --txly-primary-foreground: var(--color-blue-300);
+  --txly-border: var(--color-blue-100);
+  --txly-border-primary:  var(--color-blue-600);
+}
+
+[data-theme="salt-white"] {
+  --txly-foreground: var(--color-mist-100);
+  --txly-background: var(--color-mist-950);
+  --txly-accent: var(--color-mist-900);
+  --txly-accent-foreground: var(--color-mist-300);
+  --txly-primary: var(--color-mist-700);
+  --txly-primary-foreground: var(--color-mist-300);
+  --txly-border: var(--color-mist-100);
+  --txly-border-primary:  var(--color-mist-600);
+}
+
+[data-theme="midnight"] {
+  --txly-foreground: var(--color-slate-100);
+  --txly-background: var(--color-slate-950);
+  --txly-accent: var(--color-slate-900);
+  --txly-accent-foreground: var(--color-slate-300);
+  --txly-primary: var(--color-slate-700);
+  --txly-primary-foreground: var(--color-slate-300);
+  --txly-border: var(--color-slate-100);
+  --txly-border-primary:  var(--color-slate-600);
+}
+
 
 @layer base {
   * {
