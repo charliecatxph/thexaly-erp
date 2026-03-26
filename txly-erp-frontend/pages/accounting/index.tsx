@@ -21,7 +21,7 @@ export default function Accounting() {
         setBreadcrumbs(["Accounting / Finance"]);
     }, []);
 
-    return <SidebarInset>
+    return <SidebarInset className="bg-txly-bg">
         <TXLYHeader />
         <p>Accounting Main</p>
     </SidebarInset>

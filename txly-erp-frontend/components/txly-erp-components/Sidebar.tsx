@@ -43,11 +43,11 @@ export default function TXLYSidebar({ sig }: { sig: boolean }) {
   }, [svxt, openMobile]);
   if (svxt) {
     return (
-      <Sidebar collapsible="icon" className="border-r-0!">
+      <Sidebar collapsible="icon" className="border-r-0! bg-txly-bg-alt">
         <SidebarHeader>
           <SystemSelector />
         </SidebarHeader>
-        <SidebarContent>
+        {/* <SidebarContent>
           <TXLYERPButtons />
         </SidebarContent>
         <SidebarFooter>
@@ -118,7 +118,7 @@ export default function TXLYSidebar({ sig }: { sig: boolean }) {
               </DropdownMenu>
             </SidebarMenuItem>
           </SidebarMenu>
-        </SidebarFooter>
+        </SidebarFooter> */}
       </Sidebar>
     );
   }

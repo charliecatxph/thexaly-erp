@@ -43,7 +43,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --sidebar: var(--color-txly-background);
+  --sidebar: var(--color-txly-bg-alt);
   --sidebar-foreground: var(--color-txly-foreground);
   --sidebar-primary: var(--color-txly-primary);
   --sidebar-primary-foreground: var(--color-txly-primary-foreground);
@@ -60,6 +60,14 @@
   --color-txly-primary-foreground: var(--txly-primary-foreground);
   --color-txly-border: var(--txly-border);
   --color-txly-border-primary: var(--txly-border-primary);
+
+  --color-txly-bg: var(--txly-bg);
+  --color-txly-bg-alt: var(--txly-bg-alt);
+  --color-txly-alt-foreground: var(--txly-alt-foreground);
+  --color-txly-bg-alt-accent: var(--txly-bg-alt-accent);
+  --color-txly-alt-accent-foreground: var(--txly-alt-accent-foreground);
+  --color-txly-bg-alt-active: var(--txly-bg-alt-active);
+  --color-txly-alt-active-foreground: var(--txly-alt-active-foreground);
 }
 
 :root {
@@ -80,23 +88,23 @@
   --accent-foreground: oklch(95% 0.052 163.051);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0   --sidebar: oklch(26.2% 0.051 172.552);
-  --sidebar-foreground: oklch(95% 0.052 163.051);
-  --sidebar-primary: oklch(87.1% 0.15 154.449);
-  --sidebar-primary-foreground: oklch(87.1% 0.15 154.449);
-  --sidebar-accent: oklch(37.8% 0.077 168.94);
-  --sidebar-accent-foreground: oklch(87.1% 0.15 154.449);
-  --sidebar-border: oklch(97.9% 0.021 166.113);
-  --sidebar-ring: oklch(59.6% 0.145 163.225);
+  --input: oklch(0.922 0 --sidebar: oklch(26.2% 0.051 172.552);
+      --sidebar-foreground: oklch(95% 0.052 163.051);
+      --sidebar-primary: oklch(87.1% 0.15 154.449);
+      --sidebar-primary-foreground: oklch(87.1% 0.15 154.449);
+      --sidebar-accent: oklch(37.8% 0.077 168.94);
+      --sidebar-accent-foreground: oklch(87.1% 0.15 154.449);
+      --sidebar-border: oklch(97.9% 0.021 166.113);
+      --sidebar-ring: oklch(59.6% 0.145 163.225);
 
-  --txly-foreground: oklch(95% 0.052 163.051);
-  --txly-background: oklch(18.406% 0.07553 29.223);
-  --txly-accent: oklch(37.8% 0.077 168.94);
-  --txly-accent-foreground: oklch(87.1% 0.15 154.449);
-  --txly-primary: oklch(50.8% 0.118 165.612);
-  --txly-primary-foreground: oklch(87.1% 0.15 154.449);
-  --txly-border: oklch(97.9% 0.021 166.113);
-  --txly-border-primary: oklch(59.6% 0.145 163.225);0);
+      --txly-foreground: oklch(95% 0.052 163.051);
+      --txly-background: oklch(18.406% 0.07553 29.223);
+      --txly-accent: oklch(37.8% 0.077 168.94);
+      --txly-accent-foreground: oklch(87.1% 0.15 154.449);
+      --txly-primary: oklch(50.8% 0.118 165.612);
+      --txly-primary-foreground: oklch(87.1% 0.15 154.449);
+      --txly-border: oklch(97.9% 0.021 166.113);
+      --txly-border-primary: oklch(59.6% 0.145 163.225); 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -112,7 +120,15 @@
   --txly-primary: var(--color-emerald-700);
   --txly-primary-foreground: var(--color-emerald-300);
   --txly-border: var(--color-emerald-100);
-  --txly-border-primary:  var(--color-emerald-600);
+  --txly-border-primary: var(--color-emerald-600);
+
+  --txly-bg: #212121;
+  --txly-bg-alt: #181818;
+  --txly-alt-foreground: #fff;
+  --txly-bg-alt-accent: #292929;
+  --txly-alt-accent-foreground: #f7f7f7;
+  --txly-bg-alt-active: #ececec;
+  --txly-alt-active-foreground: #000000;
 }
 
 [data-theme="lush-green"] {
@@ -123,7 +139,7 @@
   --txly-primary: var(--color-emerald-700);
   --txly-primary-foreground: var(--color-emerald-300);
   --txly-border: var(--color-emerald-100);
-  --txly-border-primary:  var(--color-emerald-600);
+  --txly-border-primary: var(--color-emerald-600);
 }
 
 [data-theme="purple"] {
@@ -134,7 +150,7 @@
   --txly-primary: var(--color-purple-700);
   --txly-primary-foreground: var(--color-purple-300);
   --txly-border: var(--color-purple-100);
-  --txly-border-primary:  var(--color-purple-600);
+  --txly-border-primary: var(--color-purple-600);
 }
 
 [data-theme="blue"] {
@@ -145,7 +161,7 @@
   --txly-primary: var(--color-blue-700);
   --txly-primary-foreground: var(--color-blue-300);
   --txly-border: var(--color-blue-100);
-  --txly-border-primary:  var(--color-blue-600);
+  --txly-border-primary: var(--color-blue-600);
 }
 
 [data-theme="salt-white"] {
@@ -156,7 +172,7 @@
   --txly-primary: var(--color-mist-700);
   --txly-primary-foreground: var(--color-mist-300);
   --txly-border: var(--color-mist-100);
-  --txly-border-primary:  var(--color-mist-600);
+  --txly-border-primary: var(--color-mist-600);
 }
 
 [data-theme="midnight"] {
@@ -167,8 +183,71 @@
   --txly-primary: var(--color-slate-700);
   --txly-primary-foreground: var(--color-slate-300);
   --txly-border: var(--color-slate-100);
-  --txly-border-primary:  var(--color-slate-600);
+  --txly-border-primary: var(--color-slate-600);
 }
+
+.dplx[data-state="open"] {
+  background-color: var(--txly-accent);
+  color: var(--txly-accent-foreground);
+}
+
+.txly-dpd-menu-item {
+  background: var(--txly-bg);
+  color: var(--txly-foreground);
+  padding: 0.4rem 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.txly-dpd-menu-item:focus {
+  background: var(--txly-bg-alt-accent);
+  color: var(--txly-alt-accent-foreground);
+}
+
+.txly-dpd-menu-item[data-state="open"] {
+  background: var(--txly-bg-alt-accent);
+  color: var(--txly-alt-accent-foreground);
+}
+
+
+.txly-dpd-menu-item2 {
+  background: var(--txly-bg);
+  color: var(--txly-foreground);
+  padding: 0.4rem 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.txly-dpd-menu-item2:focus {
+  background: var(--txly-bg-alt-accent);
+}
+
+.txly-dpd-menu-item2[data-state="open"] {
+  background: var(--txly-bg-alt-accent);
+}
+
+.txly-dpd-menu-item-icon {
+  color: white;
+  background: oklch(54.6% 0.245 262.881);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+
+.txly-dpd-menu-item-icon2 {
+  color: black !important;
+  background: oklch(80.969% 0.26587 140.937);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.txly-dpd-menu-item-icon3 {
+  color: white;
+  background: oklch(73.797% 0.18336 54.681);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+
+
 
 
 @layer base {

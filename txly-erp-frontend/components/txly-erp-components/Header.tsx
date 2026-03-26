@@ -35,7 +35,7 @@ export default function TXLYHeader() {
   const { setTheme } = useTheme();
   return (
     <header
-      className={`${geist.className} sticky top-0 z-99 bg-txly-background w-full flex h-13 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12`}
+      className={`${geist.className} sticky top-0 z-99 bg-txly-bg-alt w-full flex h-13 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12`}
     >
       <div className="flex items-center justify-between gap-2 px-4 w-full">
         <div className="flex items-center gap-2">
